@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Rosarivo", serif;
+  color: #E5E5E5;
+}
+
+.background {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+nav {
+  font-size: 0.8rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em 1em;
+  list-style: none;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+header h2 {
+  font-size: 1.2rem;
+}
+@media (min-width: 700px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 6em;
+  border: 2px solid red;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0px 0px 50px #E5E5E5;
+  letter-spacing: 1rem;
+}
+@media (min-width: 700px) {
+  .about h2 {
+    font-size: 3rem;
+  }
+}
+.about p {
+  text-align: center;
+  line-height: 1.5em;
+}
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.about-box h3 {
+  font-size: 1.5rem;
+  padding: 1em 0;
+}
+.about-box--experience {
+  flex-basis: 49%;
+}
+.about-box--experience ul {
+  padding-left: 1em;
+}
+.about-box--skills {
+  flex-basis: 49%;
+}
+.about-social {
+  border: 2px solid green;
+  height: 50vh;
+}
+
+footer {
+  border: 2px solid pink;
+}
+
+/*# sourceMappingURL=main.css.map */
