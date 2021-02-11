@@ -121,11 +121,16 @@ header h2 {
 .about {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0 2em;
-  width: 60vw;
-  margin: 0 auto;
   color: #fff;
   width: 100%;
+  border: 2px dotted red;
   color: #3d3f3e;
+}
+@media (orientation: portrait) {
+  .about {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
 }
 @media (min-width: 700px) {
   .about {
@@ -133,7 +138,7 @@ header h2 {
   }
 }
 .about-header {
-  min-height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,6 +149,11 @@ header h2 {
   cursor: pointer;
   text-decoration: none;
 }
+@media (orientation: portrait) {
+  .about-header span a {
+    color: #e4c396;
+  }
+}
 .about h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -153,6 +163,12 @@ header h2 {
 @media (min-width: 700px) {
   .about h2 {
     font-size: 3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) and (orientation: landscape) {
+  .about h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
   }
 }
 .about p {
@@ -167,48 +183,62 @@ header h2 {
     font-size: 1em;
   }
 }
+@media (min-width: 600px) and (max-width: 1100px) and (orientation: landscape) {
+  .about p {
+    line-height: 1.5em;
+    font-size: 0.8em;
+  }
+}
 
 .contact {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 3em 1.2em;
+  padding: 2em 1.2em;
   align-items: center;
 }
 @media (min-width: 700px) {
   .contact {
-    width: 50%;
+    width: 60%;
     padding: 4em 1.2em;
     justify-content: space-evenly;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) and (orientation: landscape) {
+  .contact {
+    width: 80%;
+    padding: 1.5em 1.2em 0 1.2em;
   }
 }
 .contact i {
   font-size: 1.3em;
   color: #fff;
   transition: all 0.4s linear;
-  color: #3d3f3e;
+  color: #e4c396;
 }
 .contact i:hover {
-  color: #e4c396;
-}
-.contact a:nth-child(1) i {
-  color: #e4c396;
-}
-.contact a:nth-child(1) i:hover {
-  color: #757e61;
-}
-.contact a:nth-child(3) i {
-  color: #757e61;
-}
-.contact a:nth-child(3) i:hover {
   color: #b46f36;
 }
-.contact a:nth-child(4) i {
-  color: #b46f36;
-}
-.contact a:nth-child(4) i:hover {
-  color: #3d3f3e;
+@media (min-width: 700px) {
+  .contact a:nth-child(1) i {
+    color: #3d3f3e;
+  }
+  .contact a:nth-child(1) i:hover {
+    color: #757e61;
+  }
+  .contact a:nth-child(3) i {
+    color: #757e61;
+  }
+  .contact a:nth-child(3) i:hover {
+    color: #e4c396;
+  }
+  .contact a:nth-child(4) i {
+    color: #b46f36;
+  }
+  .contact a:nth-child(4) i:hover {
+    color: #3d3f3e;
+  }
 }
 
 .portfolio {
